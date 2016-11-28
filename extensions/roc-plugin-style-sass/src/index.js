@@ -36,7 +36,7 @@ export const roc = {
             const params = [
                 settings.build.sass.useBourbon ? `includePaths[]=${BOURBON_PATH}` : '',
                 settings.build.style.sourceMap ? 'sourceMap' : '',
-            ].filter(v => v !== '').join('&');
+            ].filter(v => v).join('&');
 
             return {
                 extensions: ['sass', 'scss'],
